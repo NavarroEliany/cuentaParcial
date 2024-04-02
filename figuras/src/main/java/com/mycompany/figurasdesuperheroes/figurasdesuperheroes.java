@@ -1,33 +1,32 @@
 
-package com.mycompany.figuras;
+package com.mycompany.figurasdesuperheroes;
 
-import com.mycompany.figuras.coleccion.Coleccion;
-import com.mycompany.figuras.dimension.Dimension;
-import com.mycompany.figuras.figura.figura;
-import com.mycompany.figuras.java.awt.dimension;
-import com.mycompany.figuras.superheroe.Superheroe;
+import coleccion.Coleccion;
+import dimension.Dimension;
+import figura.Figura;
+import superheroe.Superheroe;
 
-public class figurasdesuperheroes {
+public class FigurasDeSuperheroes {
+
     public static void main(String[] args) {
-        superheroe volador = new superheroe("Volador");
-        superheroe armadura = new superheroe("Armadura");
-        superheroe acuatico = new superheroe("Acuatico");
+        Superheroe volador = new Superheroe("Volador");
+        Superheroe armadura = new Superheroe("Armadura");
+        Superheroe acuatico = new Superheroe("Acuatico");
         
         volador.setDescription("Vuela");
         armadura.setDescription("Resistente");
         acuatico.setDescription("Viaja en el agua");
         
-        dimension small = new dimension(10,10,10);
-        dimension medium = new dimension(15,15,15);
-        dimension big = new dimension(22,22,22);
+        Dimension medium = new Dimension(15,15,15);
+        Dimension big = new Dimension(22,22,22);
         
-        figura superman = new Figura("20", 28000, medium, volador);
-        figura ironman = new Figura("21", 30000, big, armadura);
-        figura aquaman = new Figura("22", 18000, medium, acuatico);
+        Figura superman = new Figura("20", 28000, medium, volador);
+        Figura ironman = new Figura("21", 30000, big, armadura);
+        Figura aquaman = new Figura("22", 18000, medium, acuatico);
         
         System.out.println(aquaman.toString());
         System.out.println(aquaman.getPrice());
-        coleccion collecion1 = new coleccion("DC");
+        Coleccion collecion1 = new Coleccion("DC");
         collecion1.addFigura(superman);
         collecion1.addFigura(ironman);
         collecion1.addFigura(aquaman);
@@ -42,7 +41,3 @@ public class figurasdesuperheroes {
         
     }
 }
-
-
-
-    

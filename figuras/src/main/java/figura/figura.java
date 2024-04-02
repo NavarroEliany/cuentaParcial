@@ -1,25 +1,16 @@
 
-package com.mycompany.figuras;
+package figura;
 
-import com.mycompany.figuras.dimension.Dimension;
 import dimension.Dimension;
-import sperheroe.Superheroe;
-
-public class figura {
-
-    boolean getPrice() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-
+import superheroe.Superheroe;
 
 public class Figura {
     String code;
     double price;
-    dimension dimentions;
+    Dimension dimentions;
     Superheroe superheroe;
 
-    public Figura(String code, double price, dimension dimentions, Superheroe superheroe) {
+    public Figura(String code, double price, Dimension dimentions, Superheroe superheroe) {
         this.code = code;
         this.price = price;
         this.dimentions = dimentions;
@@ -42,11 +33,11 @@ public class Figura {
         this.price = price;
     }
 
-    public dimension getDimentions() {
+    public Dimension getDimentions() {
         return dimentions;
     }
 
-    public void setDimentions(dimension dimentions) {
+    public void setDimentions(Dimension dimentions) {
         this.dimentions = dimentions;
     }
 
@@ -69,5 +60,4 @@ public class Figura {
     
     
     
-}
 }

@@ -1,17 +1,16 @@
 
-package com.mycompany.figuras;
+package coleccion;
 
-import com.mycompany.figuras.figura.Figura;
+import figura.Figura;
 import java.util.ArrayList;
-public class coleccion {
 
-    
-        String collectionName;
+public class Coleccion {
+    String collectionName;
     ArrayList<Figura> listaFiguras;
 
-    public coleccion(String collectionName) {
+    public Coleccion(String collectionName) {
         this.collectionName = collectionName;
-        this.listaFiguras = new ArrayList<Figura>();
+        this.listaFiguras = new ArrayList<>();
     }
 
     public String getCollectionName() {
@@ -86,14 +85,6 @@ public class coleccion {
         }
         return volumen;
     }
-
-    static class Coleccion {
-
-        public Coleccion() {
-        }
-    }
     
     
 }
-    
-

@@ -1,16 +1,12 @@
 
-package com.mycompany.figuras;
+package superheroe;
 
-
-public class superheroe {
-    
-
-
+public class Superheroe {
     String name;
     String description;
     boolean cape;
 
-    public superheroe(String name) {
+    public Superheroe(String name) {
         this.name = name;
         this.description = "";
         this.cape = false;

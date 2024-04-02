@@ -1,20 +1,18 @@
 
-package com.mycompany.figuras;
+package dimension;
 
-public class dimension {
-    
-
-   double height;
+public class Dimension {
+    double height;
     double width;
     double depth;
 
-    public dimension() {
+    public Dimension() {
         this.height = 0;
         this.width = 0;
         this.depth = 0;
     }
 
-    public dimension(double height, double width, double depth) {
+    public Dimension(double height, double width, double depth) {
         this.height = height;
         this.width = width;
         this.depth = depth;
@@ -52,11 +50,5 @@ public class dimension {
     public String toString() {
         return "Dimension{" + "height=" + height + ", width=" + width + ", depth=" + depth + ", maxVol=" + getVolumen() + '}';
     }
-
-    static class Dimension {
-
-        public Dimension() {
-        }
-    }
-}
     
+}
